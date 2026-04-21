@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Models & data (too big for git, live on Drive)
+models/adapter/
+models/merged-fp16/
+models/merged-q4.gguf
+models/rag_index/
+data/raw/
+data/processed/
+
+# But keep the gitkeeps so folders exist after clone
+!models/**/.gitkeep
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Secrets
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
